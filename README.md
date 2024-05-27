@@ -15,7 +15,6 @@ In today's digital age, understanding the emotions and opinions expressed in wri
    - [Dataset Information](#dataset-information)
    - [Data Pre-processing](#data-pre-processing)
    - [Machine Learning Models Used](#machine-learning-models-used)
-   - [Ethical Conduct in Research](#ethical-conduct-in-research)
 4. [Implementation](#implementation)
    - [General Overview of the Technology](#general-overview-of-the-technology)
    - [Process Followed in Implementation](#process-followed-in-implementation)
@@ -25,8 +24,7 @@ In today's digital age, understanding the emotions and opinions expressed in wri
    - [Analysis on Amazon Dataset](#analysis-on-amazon-dataset)
    - [Analysis on News Dataset](#analysis-on-news-dataset)
 6. [Conclusion](#conclusion)
-7. [Future Scope](#future-scope)
-8. [Bibliography](#bibliography)
+7. [Datasets Links](#Dataset-Links)
 
 ## Introduction
 
@@ -37,6 +35,8 @@ In today's world, written communication has become essential for sharing informa
 In recent years, researchers have made significant strides in merging deep learning and machine learning techniques to ensure accurate sentiment classification. This section includes a list of relevant studies that have contributed to the field of sentiment analysis, highlighting the use of various models and techniques to determine user opinions, feelings, and reviews towards different subjects and items.
 
 ## Methodology
+![Proecess Flow](Images/Process.jpg)
+
 
 ### Purpose of the Study
 
@@ -61,10 +61,6 @@ Our research strategy involves carefully learning and testing various machine le
 - Long Short-Term Memory (LSTM)
 - Bidirectional Encoder Representations from Transformers (BERT)
 
-### Ethical Conduct in Research
-
-We established ethical practices to preserve the privacy of authors while conducting sentiment analysis on datasets consisting of Amazon reviews, Tweets, and news articles. We took extra precautions to preserve the privacy of the individuals involved by only reporting aggregate results and never quoting directly from the texts.
-
 ## Implementation
 
 ### General Overview of the Technology
@@ -83,6 +79,8 @@ Python was selected as the primary language for this project due to its adaptabi
 8. **Generating Graphs**: Visualizing the performance of the models.
 
 ## Results and Findings
+![Model Performance](Images/Model_perfomance.png)
+
 
 ### Metrics Used for Evaluation
 
@@ -95,64 +93,31 @@ Python was selected as the primary language for this project due to its adaptabi
 
 ### Analysis on Tweets Dataset
 
-- **Default Parameters**: BERT outperformed other models with a precision of 0.83 and an accuracy of 0.85.
-- **Parameter Changes**: BERT maintained its lead with a precision of 0.79 and an accuracy of 0.83.
+- **Default Parameters**: BERT outperformed other models with a precision of 0.83 and an accuracy of 0.85. ![Tweet Default Parameter](Images/tweet_default_parameters.png)
+- **Parameter Changes**: BERT maintained its lead with a precision of 0.79 and an accuracy of 0.83. ![Tweet with Parameter change](Images/tweet_parameters_changes.png)
 
 ### Analysis on Amazon Dataset
 
-- **Default Parameters**: SVM and Random Forest performed well with an accuracy of 0.83 and 0.81, respectively.
-- **Parameter Changes**: BERT continued to excel with an accuracy of 0.81.
+- **Default Parameters**: SVM and Random Forest performed well with an accuracy of 0.83 and 0.81, respectively.![Amazon Default Parameter](Images/amazon_default_parameters.png)
+- **Parameter Changes**: BERT continued to excel with an accuracy of 0.81.![Amazon with Parameter change](Images/amazon_parameters_changes.png)
 
 ### Analysis on News Dataset
 
-- **Default Parameters**: BERT outperformed other models with a precision of 0.76 and an accuracy of 0.80.
-- **Parameter Changes**: BERT maintained its lead with a precision of 0.80 and an accuracy of 0.81.
+- **Default Parameters**: BERT outperformed other models with a precision of 0.76 and an accuracy of 0.80.![News Default Parameter](Images/news_default_parameters.png)
+- **Parameter Changes**: BERT maintained its lead with a precision of 0.80 and an accuracy of 0.81.![News with Parameter change](Images/news_parameters_changes.png)
 
 ## Conclusion
 
 This in-depth research into sentiment analysis has yielded valuable insights into the capabilities and limitations of various machine learning models across three significant text domains: Tweets, Amazon reviews, and News Articles. BERT consistently exhibited outstanding performance, leveraging its extensive pre-training and bidirectional architecture to effectively extract semantics, particularly from lengthy news articles and nuanced tweets. However, no model emerged as a clear victor across all datasets, indicating room for improvement. The study highlights the importance of matching models to datasets based on their unique characteristics and emphasizes the need for ongoing development to address challenges such as sarcasm, conflicting sentiments, and transfer learning across domains.
 
-## Future Scope
 
-Future work should focus on expanding the variety of data sources, developing novel neural architectures tailored for nuanced sentiment tasks, employing techniques such as multi-task learning and semi-supervised pre-training to improve transfer learning, utilizing ensemble methods to combine diverse models, adding capabilities for aspect-based and neutral sentiment analysis, leveraging interpretability techniques to increase trust, and rigorously evaluating social impacts.
+## Dataset Links
 
-## Bibliography
+1. Amazon reviews https://www.kaggle.com/datasets/kritanjalijain/amazon-reviews
+2. Sentiment Analysis for Financial News https://www.kaggle.com/datasets/ankurzing/sentiment-analysis-for-financial-news
+3. Twitter Tweets Sentiment Dataset https://www.kaggle.com/datasets/yasserh/twitter-tweets-sentiment-dataset
 
-1. Bollen, Johan and Mao, Huina and Zeng, Xiaojun, Twitter mood predicts the stock market, Journal of Computational Science, volume 2, number 1, pages 1-8, 2011, Elsevier.
-2. Chen, Yubo and Xie, Jinhong, Online consumer review: Word-of-mouth as a new element of marketing communication mix, Management science, volume 54, number 3, pages 477-491, 2008, INFORMS.
-3. Pak, Alexander and Paroubek, Patrick, Twitter as a Corpus for Sentiment Analysis and Opinion Mining, LREc, volume 10, number 2010, pages 1320-1326, 2010.
-4. Turney, Peter D., Thumbs up or thumbs down? Semantic orientation applied to unsupervised classification of reviews, Proceedings of the 40th annual meeting of the Association for Computational Linguistics, pages 417-424, 2002.
-5. Liu, Yu and Zhang, Xuejing, The effect of news and public mood on stock movements, Information Sciences, volume 278, pages 826-840, 2012, Elsevier.
-6. Hoang, Tuan-Anh and Bihorac, Alina and Rouces, Jacco, Aspect-based sentiment analysis using BERT, Proceedings of the International Conference on Machine Learning and Cybernetics, pages 245-251, 2015, IEEE.
-7. Amira Samy Talaat. Sentiment analysis classification system using hybrid BERT models. Journal of Big Data, 10(1):1–18, 2023. SpringerOpen.
-8. Ms D Deepa and others. Bidirectional encoder representations from transformers (BERT) language model for sentiment analysis task. Turkish Journal of Computer and Mathematics Education (TURCOMAT), 12(7):1708–1721, 2021.
-9. Rajkumar S Jagdale, Vishal S Shirsat, and Sachin N Deshmukh. Sentiment analysis on product reviews using machine learning techniques. In Cognitive Informatics and Soft Computing: Proceeding of CISC 2017, pages 639–647, 2019. Springer.
-10. Barakat AlBadani, Ronghua Shi, and Jian Dong. A novel machine learning approach for sentiment analysis on Twitter incorporating the universal language model fine-tuning and SVM. Applied System Innovation, 5(1):13, 2022. MDPI.
-11. Palak Baid, Apoorva Gupta, and Neelam Chaplot. Sentiment analysis of movie reviews using machine learning techniques. International Journal of Computer Applications, 179(7):45–49, 2017. Jurafsky, Daniel and Martin, James H.
-12. Amazon reviews https://www.kaggle.com/datasets/kritanjalijain/amazon-reviews
-13. Sentiment Analysis for Financial News https://www.kaggle.com/datasets/ankurzing/sentiment-analysis-for-financial-news
-14. Twitter Tweets Sentiment Dataset https://www.kaggle.com/datasets/yasserh/twitter-tweets-sentiment-dataset
-15. Jurafsky, Daniel and Martin, James H., Speech and Language Processing, 2019, Cambridge University Press.
-16. Lopez, Vanessa and Motta, Enrico, PowerAqua: Fishing the Semantic Web, The Semantic Web: Research and Applications, pages 393–410, 2006, Springer.
-17. Navigli, Roberto and Ponzetto, Simone Paolo, BabelNet: The automatic construction, evaluation and application of a wide-coverage multilingual semantic network, Artificial Intelligence, volume 193, pages 217–250, 2012, Elsevier.
-18. Indurkhya, Nitin and Damerau, Fred J., Handbook of Natural Language Processing, 2010, CRC press.
-19. Bird, Steven and Klein, Ewan and Loper, Edward, Natural Language Processing with Python: Analyzing Text with the Natural Language Toolkit, 2009, O’Reilly Media, Inc.
-20. Cortes, Corinna and Vapnik, Vladimir, Support-vector networks, Machine learning, volume 20, number 3, pages 273–297, 1995, Springer.
-21. Naive Bayes Explained https://towardsdatascience.com/naive-bayes-explained-9d2b96f4a9c0
-22. Understand Random Forest Algorithms https://www.analyticsvidhya.com/blog/2021/06/understanding-random-forest/
-23. LSTM Introduction https://www.analyticsvidhya.com/blog/2021/03/introduction-to-long-short-term-memory-lstm/
 
----
 
-### Image Placement
-
-1. **Process Followed in Implementation**: Place the image `fig:procedure` (Figure 4.1) under the section "Process Followed in Implementation".
-2. **Model Score Matrix of Tweet dataset with default Parameters**: Place the image `fig:tweet_default` (Figure 5.1) under the subsection "Analysis on Tweets dataset with default parameters".
-3. **Model Score Matrix of Amazon dataset with default Parameters**: Place the image `fig:amazon_default` (Figure 5.2) under the subsection "Analysis on Amazon dataset with default parameters".
-4. **Model Score Matrix of News dataset with default Parameters**: Place the image `fig:news_default` (Figure 5.3) under the subsection "Analysis on News dataset with default parameters".
-5. **Model Score Matrix of News dataset with different Parameters**: Place the image `fig:news_tuned` (Figure 5.4) under the subsection "Analysis on News dataset with parameter changes".
-6. **Model Score Matrix of Amazon dataset with different Parameters**: Place the image `fig:amazon_tuned` (Figure 5.5) under the subsection "Analysis on Amazon dataset with parameter changes".
-7. **Model Score Matrix of Tweet dataset with different Parameters**: Place the image `fig:tweet_tuned` (Figure 5.6) under the subsection "Analysis on Tweet dataset with parameter changes".
-8. **Model Performance Average out for all Dataset**: Place the image `fig:performance_average` (Figure 5.7) under the subsection "Model Performance Average out for all Dataset".
 
 
